@@ -9,8 +9,8 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/chrislusf/seaweedfs/weed/glog"
-	"github.com/chrislusf/seaweedfs/weed/server"
+	"github.com/draleyva/seaweedfs/weed/glog"
+	"github.com/draleyva/seaweedfs/weed/server"
 	"github.com/gorilla/mux"
 )
 

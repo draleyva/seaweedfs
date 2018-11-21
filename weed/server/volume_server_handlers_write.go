@@ -8,10 +8,10 @@ import (
 	"strings"
 	"time"
 
-	"github.com/chrislusf/seaweedfs/weed/glog"
-	"github.com/chrislusf/seaweedfs/weed/operation"
-	"github.com/chrislusf/seaweedfs/weed/storage"
-	"github.com/chrislusf/seaweedfs/weed/topology"
+	"github.com/draleyva/seaweedfs/weed/glog"
+	"github.com/draleyva/seaweedfs/weed/operation"
+	"github.com/draleyva/seaweedfs/weed/storage"
+	"github.com/draleyva/seaweedfs/weed/topology"
 )
 
 func (vs *VolumeServer) PostHandler(w http.ResponseWriter, r *http.Request) {

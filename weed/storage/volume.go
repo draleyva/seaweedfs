@@ -7,7 +7,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/chrislusf/seaweedfs/weed/glog"
+	"github.com/draleyva/seaweedfs/weed/glog"
 )
 
 type Volume struct {

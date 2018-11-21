@@ -40,5 +40,5 @@ deploy:
   - build/openbsd_386.tar.gz
   on:
     tags: true
-    repo: chrislusf/seaweedfs
+    repo: draleyva/seaweedfs
     go: tip

@@ -3,16 +3,16 @@ package command
 import (
 	"strings"
 
-	"github.com/chrislusf/seaweedfs/weed/glog"
-	"github.com/chrislusf/seaweedfs/weed/replication"
-	"github.com/chrislusf/seaweedfs/weed/replication/sink"
-	_ "github.com/chrislusf/seaweedfs/weed/replication/sink/azuresink"
-	_ "github.com/chrislusf/seaweedfs/weed/replication/sink/b2sink"
-	_ "github.com/chrislusf/seaweedfs/weed/replication/sink/filersink"
-	_ "github.com/chrislusf/seaweedfs/weed/replication/sink/gcssink"
-	_ "github.com/chrislusf/seaweedfs/weed/replication/sink/s3sink"
-	"github.com/chrislusf/seaweedfs/weed/replication/sub"
-	"github.com/chrislusf/seaweedfs/weed/server"
+	"github.com/draleyva/seaweedfs/weed/glog"
+	"github.com/draleyva/seaweedfs/weed/replication"
+	"github.com/draleyva/seaweedfs/weed/replication/sink"
+	_ "github.com/draleyva/seaweedfs/weed/replication/sink/azuresink"
+	_ "github.com/draleyva/seaweedfs/weed/replication/sink/b2sink"
+	_ "github.com/draleyva/seaweedfs/weed/replication/sink/filersink"
+	_ "github.com/draleyva/seaweedfs/weed/replication/sink/gcssink"
+	_ "github.com/draleyva/seaweedfs/weed/replication/sink/s3sink"
+	"github.com/draleyva/seaweedfs/weed/replication/sub"
+	"github.com/draleyva/seaweedfs/weed/server"
 	"github.com/spf13/viper"
 )
 

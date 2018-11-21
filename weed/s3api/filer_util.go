@@ -6,8 +6,8 @@ import (
 	"os"
 	"time"
 
-	"github.com/chrislusf/seaweedfs/weed/glog"
-	"github.com/chrislusf/seaweedfs/weed/pb/filer_pb"
+	"github.com/draleyva/seaweedfs/weed/glog"
+	"github.com/draleyva/seaweedfs/weed/pb/filer_pb"
 )
 
 func (s3a *S3ApiServer) mkdir(parentDirectoryPath string, dirName string, fn func(entry *filer_pb.Entry)) error {

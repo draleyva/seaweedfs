@@ -2,7 +2,7 @@ package filer2
 
 import (
 	"errors"
-	"github.com/chrislusf/seaweedfs/weed/util"
+	"github.com/draleyva/seaweedfs/weed/util"
 )
 
 type FilerStore interface {

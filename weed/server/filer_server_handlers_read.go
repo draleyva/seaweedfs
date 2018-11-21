@@ -6,9 +6,9 @@ import (
 	"net/url"
 	"strings"
 
-	"github.com/chrislusf/seaweedfs/weed/filer2"
-	"github.com/chrislusf/seaweedfs/weed/glog"
-	"github.com/chrislusf/seaweedfs/weed/util"
+	"github.com/draleyva/seaweedfs/weed/filer2"
+	"github.com/draleyva/seaweedfs/weed/glog"
+	"github.com/draleyva/seaweedfs/weed/util"
 	"mime"
 	"mime/multipart"
 	"path"

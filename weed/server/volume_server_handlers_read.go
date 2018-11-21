@@ -14,11 +14,11 @@ import (
 
 	"encoding/json"
 
-	"github.com/chrislusf/seaweedfs/weed/glog"
-	"github.com/chrislusf/seaweedfs/weed/images"
-	"github.com/chrislusf/seaweedfs/weed/operation"
-	"github.com/chrislusf/seaweedfs/weed/storage"
-	"github.com/chrislusf/seaweedfs/weed/util"
+	"github.com/draleyva/seaweedfs/weed/glog"
+	"github.com/draleyva/seaweedfs/weed/images"
+	"github.com/draleyva/seaweedfs/weed/operation"
+	"github.com/draleyva/seaweedfs/weed/storage"
+	"github.com/draleyva/seaweedfs/weed/util"
 )
 
 var fileNameEscaper = strings.NewReplacer("\\", "\\\\", "\"", "\\\"")

@@ -1,9 +1,9 @@
 package topology
 
 import (
-	"github.com/chrislusf/seaweedfs/weed/pb/master_pb"
-	"github.com/chrislusf/seaweedfs/weed/sequence"
-	"github.com/chrislusf/seaweedfs/weed/storage"
+	"github.com/draleyva/seaweedfs/weed/pb/master_pb"
+	"github.com/draleyva/seaweedfs/weed/sequence"
+	"github.com/draleyva/seaweedfs/weed/storage"
 	"testing"
 )
 

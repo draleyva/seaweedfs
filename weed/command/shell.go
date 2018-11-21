@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/chrislusf/seaweedfs/weed/glog"
+	"github.com/draleyva/seaweedfs/weed/glog"
 )
 
 func init() {

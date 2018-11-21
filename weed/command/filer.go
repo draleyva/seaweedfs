@@ -6,10 +6,10 @@ import (
 	"strings"
 	"time"
 
-	"github.com/chrislusf/seaweedfs/weed/glog"
-	"github.com/chrislusf/seaweedfs/weed/pb/filer_pb"
-	"github.com/chrislusf/seaweedfs/weed/server"
-	"github.com/chrislusf/seaweedfs/weed/util"
+	"github.com/draleyva/seaweedfs/weed/glog"
+	"github.com/draleyva/seaweedfs/weed/pb/filer_pb"
+	"github.com/draleyva/seaweedfs/weed/server"
+	"github.com/draleyva/seaweedfs/weed/util"
 	"google.golang.org/grpc/reflection"
 )
 

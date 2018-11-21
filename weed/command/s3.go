@@ -5,9 +5,9 @@ import (
 	"time"
 
 	"fmt"
-	"github.com/chrislusf/seaweedfs/weed/glog"
-	"github.com/chrislusf/seaweedfs/weed/s3api"
-	"github.com/chrislusf/seaweedfs/weed/util"
+	"github.com/draleyva/seaweedfs/weed/glog"
+	"github.com/draleyva/seaweedfs/weed/s3api"
+	"github.com/draleyva/seaweedfs/weed/util"
 	"github.com/gorilla/mux"
 )
 

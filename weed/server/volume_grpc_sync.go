@@ -4,10 +4,10 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/chrislusf/seaweedfs/weed/glog"
-	"github.com/chrislusf/seaweedfs/weed/pb/volume_server_pb"
-	"github.com/chrislusf/seaweedfs/weed/storage"
-	"github.com/chrislusf/seaweedfs/weed/storage/types"
+	"github.com/draleyva/seaweedfs/weed/glog"
+	"github.com/draleyva/seaweedfs/weed/pb/volume_server_pb"
+	"github.com/draleyva/seaweedfs/weed/storage"
+	"github.com/draleyva/seaweedfs/weed/storage/types"
 )
 
 func (vs *VolumeServer) VolumeSyncStatus(ctx context.Context, req *volume_server_pb.VolumeSyncStatusRequest) (*volume_server_pb.VolumeSyncStatusResponse, error) {

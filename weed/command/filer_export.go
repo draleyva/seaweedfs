@@ -1,11 +1,11 @@
 package command
 
 import (
-	"github.com/chrislusf/seaweedfs/weed/filer2"
-	"github.com/chrislusf/seaweedfs/weed/glog"
-	"github.com/chrislusf/seaweedfs/weed/notification"
-	"github.com/chrislusf/seaweedfs/weed/pb/filer_pb"
-	"github.com/chrislusf/seaweedfs/weed/server"
+	"github.com/draleyva/seaweedfs/weed/filer2"
+	"github.com/draleyva/seaweedfs/weed/glog"
+	"github.com/draleyva/seaweedfs/weed/notification"
+	"github.com/draleyva/seaweedfs/weed/pb/filer_pb"
+	"github.com/draleyva/seaweedfs/weed/server"
 	"github.com/spf13/viper"
 )
 

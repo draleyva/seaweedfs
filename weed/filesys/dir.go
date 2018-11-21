@@ -9,9 +9,9 @@ import (
 
 	"bazil.org/fuse"
 	"bazil.org/fuse/fs"
-	"github.com/chrislusf/seaweedfs/weed/filer2"
-	"github.com/chrislusf/seaweedfs/weed/glog"
-	"github.com/chrislusf/seaweedfs/weed/pb/filer_pb"
+	"github.com/draleyva/seaweedfs/weed/filer2"
+	"github.com/draleyva/seaweedfs/weed/glog"
+	"github.com/draleyva/seaweedfs/weed/pb/filer_pb"
 )
 
 type Dir struct {

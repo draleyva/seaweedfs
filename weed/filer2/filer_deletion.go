@@ -3,9 +3,9 @@ package filer2
 import (
 	"time"
 
-	"github.com/chrislusf/seaweedfs/weed/operation"
-	"github.com/chrislusf/seaweedfs/weed/pb/filer_pb"
-	"github.com/chrislusf/seaweedfs/weed/glog"
+	"github.com/draleyva/seaweedfs/weed/operation"
+	"github.com/draleyva/seaweedfs/weed/pb/filer_pb"
+	"github.com/draleyva/seaweedfs/weed/glog"
 )
 
 func (f *Filer) loopProcessingDeletion() {

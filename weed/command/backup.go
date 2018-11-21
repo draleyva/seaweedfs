@@ -3,8 +3,8 @@ package command
 import (
 	"fmt"
 
-	"github.com/chrislusf/seaweedfs/weed/operation"
-	"github.com/chrislusf/seaweedfs/weed/storage"
+	"github.com/draleyva/seaweedfs/weed/operation"
+	"github.com/draleyva/seaweedfs/weed/storage"
 )
 
 var (

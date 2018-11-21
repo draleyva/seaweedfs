@@ -7,10 +7,10 @@ import (
 	"github.com/boltdb/bolt"
 
 	"errors"
-	"github.com/chrislusf/seaweedfs/weed/glog"
-	"github.com/chrislusf/seaweedfs/weed/storage/needle"
-	. "github.com/chrislusf/seaweedfs/weed/storage/types"
-	"github.com/chrislusf/seaweedfs/weed/util"
+	"github.com/draleyva/seaweedfs/weed/glog"
+	"github.com/draleyva/seaweedfs/weed/storage/needle"
+	. "github.com/draleyva/seaweedfs/weed/storage/types"
+	"github.com/draleyva/seaweedfs/weed/util"
 )
 
 type BoltDbNeedleMap struct {

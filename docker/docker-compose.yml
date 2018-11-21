@@ -2,7 +2,7 @@ version: '2'
 
 services:
   master:
-    #image: chrislusf/seaweedfs # use a remote image
+    #image: draleyva/seaweedfs # use a remote image
     build: . # build our container from the local Dockerfile
     ports:
     - 9333:9333
@@ -12,7 +12,7 @@ services:
         aliases:
         - seaweed_master
   volume:
-    #image: chrislusf/seaweedfs # use a remote image
+    #image: draleyva/seaweedfs # use a remote image
     build: . # build our container from the local Dockerfile
     ports:
     - 8080:8080
@@ -25,7 +25,7 @@ services:
         aliases:
         - seaweed_volume
   filer:
-    #image: chrislusf/seaweedfs # use a remote image
+    #image: draleyva/seaweedfs # use a remote image
     build: . # build our container from the local Dockerfile
     ports:
     - 8888:8888

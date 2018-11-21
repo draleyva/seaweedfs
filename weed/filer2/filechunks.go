@@ -6,7 +6,7 @@ import (
 	"sort"
 	"sync"
 
-	"github.com/chrislusf/seaweedfs/weed/pb/filer_pb"
+	"github.com/draleyva/seaweedfs/weed/pb/filer_pb"
 )
 
 func TotalSize(chunks []*filer_pb.FileChunk) (size uint64) {

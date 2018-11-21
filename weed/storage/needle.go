@@ -8,8 +8,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/chrislusf/seaweedfs/weed/images"
-	. "github.com/chrislusf/seaweedfs/weed/storage/types"
+	"github.com/draleyva/seaweedfs/weed/images"
+	. "github.com/draleyva/seaweedfs/weed/storage/types"
 	"io/ioutil"
 )
 

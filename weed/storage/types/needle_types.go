@@ -2,7 +2,7 @@ package types
 
 import (
 	"fmt"
-	"github.com/chrislusf/seaweedfs/weed/util"
+	"github.com/draleyva/seaweedfs/weed/util"
 	"math"
 	"strconv"
 )

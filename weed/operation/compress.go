@@ -7,7 +7,7 @@ import (
 	"io/ioutil"
 	"strings"
 
-	"github.com/chrislusf/seaweedfs/weed/glog"
+	"github.com/draleyva/seaweedfs/weed/glog"
 )
 
 /*

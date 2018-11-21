@@ -1,4 +1,4 @@
-package: github.com/chrislusf/seaweedfs/weed
+package: github.com/draleyva/seaweedfs/weed
 import:
 - package: bazil.org/fuse
   subpackages:

@@ -1,15 +1,15 @@
 # SeaweedFS
 
-[![Build Status](https://travis-ci.org/chrislusf/seaweedfs.svg?branch=master)](https://travis-ci.org/chrislusf/seaweedfs)
-[![GoDoc](https://godoc.org/github.com/chrislusf/seaweedfs/weed?status.svg)](https://godoc.org/github.com/chrislusf/seaweedfs/weed)
-[![Wiki](https://img.shields.io/badge/docs-wiki-blue.svg)](https://github.com/chrislusf/seaweedfs/wiki)
+[![Build Status](https://travis-ci.org/draleyva/seaweedfs.svg?branch=master)](https://travis-ci.org/draleyva/seaweedfs)
+[![GoDoc](https://godoc.org/github.com/draleyva/seaweedfs/weed?status.svg)](https://godoc.org/github.com/draleyva/seaweedfs/weed)
+[![Wiki](https://img.shields.io/badge/docs-wiki-blue.svg)](https://github.com/draleyva/seaweedfs/wiki)
 
-![SeaweedFS Logo](https://raw.githubusercontent.com/chrislusf/seaweedfs/master/note/seaweedfs.png)
+![SeaweedFS Logo](https://raw.githubusercontent.com/draleyva/seaweedfs/master/note/seaweedfs.png)
 
 <h2 align="center">Supporting SeaweedFS</h2>
 
 SeaweedFS is Apache-licensed open source project, independent project with its ongoing development made 
-possible entirely thanks to the support by these awesome [backers](https://github.com/chrislusf/seaweedfs/blob/master/backers.md). 
+possible entirely thanks to the support by these awesome [backers](https://github.com/draleyva/seaweedfs/blob/master/backers.md). 
 If you'd like to grow SeaweedFS even stronger, please consider to 
 <a href="https://www.patreon.com/seaweedfs">Sponsor SeaweedFS via Patreon</a>.
 
@@ -46,10 +46,10 @@ Your support will be really appreciated by me and other supporters!
 ---
 
 
-- [Download Binaries for different platforms](https://github.com/chrislusf/seaweedfs/releases/latest)
+- [Download Binaries for different platforms](https://github.com/draleyva/seaweedfs/releases/latest)
 - [SeaweedFS on Slack](https://join.slack.com/t/seaweedfs/shared_invite/enQtMzI4MTMwMjU2MzA3LTc4MmVlYmFlNjBmZTgzZmJlYmI1MDE1YzkyNWYyZjkwZDFiM2RlMDdjNjVlNjdjYzc4NGFhZGIyYzEyMzJkYTA)
 - [SeaweedFS Mailing List](https://groups.google.com/d/forum/seaweedfs)
-- [Wiki Documentation](https://github.com/chrislusf/seaweedfs/wiki)
+- [Wiki Documentation](https://github.com/draleyva/seaweedfs/wiki)
 
 
 ## Introduction
@@ -83,10 +83,10 @@ SeaweedFS can work very well with just the object store. [[Filer]] is added late
 * [Amazon S3 compatible API][AmazonS3API] to access files with S3 tooling.
 * [Async Backup To Cloud][BackupToCloud] can enjoy extreme fast local access and backup to Amazon S3, Google Cloud Storage, Azure, BackBlaze.
 
-[Filer]: https://github.com/chrislusf/seaweedfs/wiki/Directories-and-Files
-[Mount]: https://github.com/chrislusf/seaweedfs/wiki/Mount
-[AmazonS3API]: https://github.com/chrislusf/seaweedfs/wiki/Amazon-S3-API
-[BackupToCloud]: https://github.com/chrislusf/seaweedfs/wiki/Backup-to-Cloud
+[Filer]: https://github.com/draleyva/seaweedfs/wiki/Directories-and-Files
+[Mount]: https://github.com/draleyva/seaweedfs/wiki/Mount
+[AmazonS3API]: https://github.com/draleyva/seaweedfs/wiki/Amazon-S3-API
+[BackupToCloud]: https://github.com/draleyva/seaweedfs/wiki/Backup-to-Cloud
 
 ## Example Usage
 By default, the master node runs on port 9333, and the volume nodes run on port 8080.
@@ -205,7 +205,7 @@ The replication parameter options are:
 
 More details about replication can be found [on the wiki][Replication].
 
-[Replication]: https://github.com/chrislusf/seaweedfs/wiki/Replication
+[Replication]: https://github.com/draleyva/seaweedfs/wiki/Replication
 
 You can also set the default replication strategy when starting the master server.
 
@@ -230,10 +230,10 @@ When requesting a file key, an optional "dataCenter" parameter can limit the ass
   * [Chunking large files][feat-3]
   * [Collection as a Simple Name Space][feat-4]
 
-[feat-1]: https://github.com/chrislusf/seaweedfs/wiki/Failover-Master-Server
-[feat-2]: https://github.com/chrislusf/seaweedfs/wiki/Optimization#insert-with-your-own-keys
-[feat-3]: https://github.com/chrislusf/seaweedfs/wiki/Optimization#upload-large-files
-[feat-4]: https://github.com/chrislusf/seaweedfs/wiki/Optimization#collection-as-a-simple-name-space
+[feat-1]: https://github.com/draleyva/seaweedfs/wiki/Failover-Master-Server
+[feat-2]: https://github.com/draleyva/seaweedfs/wiki/Optimization#insert-with-your-own-keys
+[feat-3]: https://github.com/draleyva/seaweedfs/wiki/Optimization#upload-large-files
+[feat-4]: https://github.com/draleyva/seaweedfs/wiki/Optimization#collection-as-a-simple-name-space
 
 ## Architecture ##
 
@@ -315,7 +315,7 @@ GlusterFS hashes the path and filename into ids, and assigned to virtual volumes
 
 ### Compared to Ceph ###
 
-Ceph can be setup similar to SeaweedFS as a key->blob store. It is much more complicated, with the need to support layers on top of it. [Here is a more detailed comparison](https://github.com/chrislusf/seaweedfs/issues/120)
+Ceph can be setup similar to SeaweedFS as a key->blob store. It is much more complicated, with the need to support layers on top of it. [Here is a more detailed comparison](https://github.com/draleyva/seaweedfs/issues/120)
 
 SeaweedFS has a centralized master group to look up free volumes, while Ceph uses hashing and metadata servers to locate its objects. Having a centralized master makes it easy to code and manage. 
 
@@ -358,7 +358,7 @@ http://mercurial.selenic.com/downloads
 step 3: download, compile, and install the project by executing the following command
 
 ```bash
-go get github.com/chrislusf/seaweedfs/weed
+go get github.com/draleyva/seaweedfs/weed
 ```
 
 once this is done, you should see the executable "weed" under `$GOPATH/bin`
@@ -366,7 +366,7 @@ once this is done, you should see the executable "weed" under `$GOPATH/bin`
 step 4: after you modify your code locally, you could start a local build by calling `go install` under 
 
 ```
-$GOPATH/src/github.com/chrislusf/seaweedfs/weed
+$GOPATH/src/github.com/draleyva/seaweedfs/weed
 ```
 
 ## Disk Related topics ##
@@ -450,4 +450,4 @@ limitations under the License.
 
 ## Stargazers over time
 
-[![Stargazers over time](https://starcharts.herokuapp.com/chrislusf/seaweedfs.svg)](https://starcharts.herokuapp.com/chrislusf/seaweedfs)
+[![Stargazers over time](https://starcharts.herokuapp.com/draleyva/seaweedfs.svg)](https://starcharts.herokuapp.com/draleyva/seaweedfs)

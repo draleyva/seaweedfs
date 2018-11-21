@@ -10,11 +10,11 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/chrislusf/seaweedfs/weed/glog"
-	"github.com/chrislusf/seaweedfs/weed/operation"
-	"github.com/chrislusf/seaweedfs/weed/security"
-	"github.com/chrislusf/seaweedfs/weed/storage"
-	"github.com/chrislusf/seaweedfs/weed/util"
+	"github.com/draleyva/seaweedfs/weed/glog"
+	"github.com/draleyva/seaweedfs/weed/operation"
+	"github.com/draleyva/seaweedfs/weed/security"
+	"github.com/draleyva/seaweedfs/weed/storage"
+	"github.com/draleyva/seaweedfs/weed/util"
 )
 
 func ReplicatedWrite(masterNode string, s *storage.Store,

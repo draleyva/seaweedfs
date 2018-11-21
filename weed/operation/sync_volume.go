@@ -3,9 +3,9 @@ package operation
 import (
 	"context"
 
-	"github.com/chrislusf/seaweedfs/weed/pb/volume_server_pb"
-	. "github.com/chrislusf/seaweedfs/weed/storage/types"
-	"github.com/chrislusf/seaweedfs/weed/util"
+	"github.com/draleyva/seaweedfs/weed/pb/volume_server_pb"
+	. "github.com/draleyva/seaweedfs/weed/storage/types"
+	"github.com/draleyva/seaweedfs/weed/util"
 )
 
 func GetVolumeSyncStatus(server string, vid uint32) (resp *volume_server_pb.VolumeSyncStatusResponse, err error) {

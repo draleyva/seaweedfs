@@ -5,7 +5,7 @@ import (
 	"time"
 
 	"fmt"
-	"github.com/chrislusf/seaweedfs/weed/pb/filer_pb"
+	"github.com/draleyva/seaweedfs/weed/pb/filer_pb"
 	"github.com/gogo/protobuf/proto"
 )
 

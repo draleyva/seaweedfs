@@ -7,8 +7,8 @@ import (
 	"log"
 	"math/rand"
 
-	"github.com/chrislusf/seaweedfs/weed/operation"
-	"github.com/chrislusf/seaweedfs/weed/util"
+	"github.com/draleyva/seaweedfs/weed/operation"
+	"github.com/draleyva/seaweedfs/weed/util"
 )
 
 var (

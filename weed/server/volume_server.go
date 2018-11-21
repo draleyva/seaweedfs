@@ -3,9 +3,9 @@ package weed_server
 import (
 	"net/http"
 
-	"github.com/chrislusf/seaweedfs/weed/glog"
-	"github.com/chrislusf/seaweedfs/weed/security"
-	"github.com/chrislusf/seaweedfs/weed/storage"
+	"github.com/draleyva/seaweedfs/weed/glog"
+	"github.com/draleyva/seaweedfs/weed/security"
+	"github.com/draleyva/seaweedfs/weed/storage"
 )
 
 type VolumeServer struct {

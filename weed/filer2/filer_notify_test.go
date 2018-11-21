@@ -4,7 +4,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/chrislusf/seaweedfs/weed/pb/filer_pb"
+	"github.com/draleyva/seaweedfs/weed/pb/filer_pb"
 	"github.com/golang/protobuf/proto"
 )
 

@@ -4,9 +4,9 @@ import (
 	"database/sql"
 	"fmt"
 
-	"github.com/chrislusf/seaweedfs/weed/filer2"
-	"github.com/chrislusf/seaweedfs/weed/filer2/abstract_sql"
-	"github.com/chrislusf/seaweedfs/weed/util"
+	"github.com/draleyva/seaweedfs/weed/filer2"
+	"github.com/draleyva/seaweedfs/weed/filer2/abstract_sql"
+	"github.com/draleyva/seaweedfs/weed/util"
 	_ "github.com/go-sql-driver/mysql"
 )
 

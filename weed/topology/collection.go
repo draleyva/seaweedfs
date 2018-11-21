@@ -3,8 +3,8 @@ package topology
 import (
 	"fmt"
 
-	"github.com/chrislusf/seaweedfs/weed/storage"
-	"github.com/chrislusf/seaweedfs/weed/util"
+	"github.com/draleyva/seaweedfs/weed/storage"
+	"github.com/draleyva/seaweedfs/weed/util"
 )
 
 type Collection struct {

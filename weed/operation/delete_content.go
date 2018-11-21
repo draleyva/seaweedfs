@@ -8,7 +8,7 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/chrislusf/seaweedfs/weed/pb/volume_server_pb"
+	"github.com/draleyva/seaweedfs/weed/pb/volume_server_pb"
 )
 
 type DeleteResult struct {

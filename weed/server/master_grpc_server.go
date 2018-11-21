@@ -6,9 +6,9 @@ import (
 	"strings"
 
 	"github.com/chrislusf/raft"
-	"github.com/chrislusf/seaweedfs/weed/glog"
-	"github.com/chrislusf/seaweedfs/weed/pb/master_pb"
-	"github.com/chrislusf/seaweedfs/weed/topology"
+	"github.com/draleyva/seaweedfs/weed/glog"
+	"github.com/draleyva/seaweedfs/weed/pb/master_pb"
+	"github.com/draleyva/seaweedfs/weed/topology"
 	"google.golang.org/grpc/peer"
 )
 

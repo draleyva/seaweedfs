@@ -16,8 +16,8 @@ import (
 	"unicode"
 	"unicode/utf8"
 
-	"github.com/chrislusf/seaweedfs/weed/command"
-	"github.com/chrislusf/seaweedfs/weed/glog"
+	"github.com/draleyva/seaweedfs/weed/command"
+	"github.com/draleyva/seaweedfs/weed/glog"
 )
 
 var IsDebug *bool
