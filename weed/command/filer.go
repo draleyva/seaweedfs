@@ -32,6 +32,7 @@ type FilerOptions struct {
 	dirListingLimit         *int
 	dataCenter              *string
 	enableNotification      *bool
+	whiteList				*string
 }
 
 func init() {
@@ -49,6 +50,7 @@ func init() {
 	f.secretKey = cmdFiler.Flag.String("secure.secret", "", "secret to encrypt Json Web Token(JWT)")
 	f.dirListingLimit = cmdFiler.Flag.Int("dirListLimit", 1000, "limit sub dir listing size")
 	f.dataCenter = cmdFiler.Flag.String("dataCenter", "", "prefer to write to volumes in this data center")
+	f.whiteList = cmdFiler.Flag.String("whiteList", "", "comma separated Ip addresses having write permission. No limit if empty.")
 }
 
 var cmdFiler = &Command{
@@ -98,6 +100,7 @@ func (fo *FilerOptions) startFiler() {
 		SecretKey:          *fo.secretKey,
 		DirListingLimit:    *fo.dirListingLimit,
 		DataCenter:         *fo.dataCenter,
+		WhiteList:			strings.Split(*f.whiteList, ","),
 	})
 	if nfs_err != nil {
 		glog.Fatalf("Filer startup error: %v", nfs_err)

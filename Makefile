@@ -32,7 +32,8 @@ linux: deps
 	mkdir -p linux
 	GOOS=linux GOARCH=amd64 go build $(GO_FLAGS) -o linux/$(BINARY) $(SOURCE_DIR)
 
-release: deps windows_build darwin_build linux_build bsd_build
+#release: deps windows_build darwin_build linux_build bsd_build
+release: deps windows_build
 
 ##### LINUX BUILDS #####
 linux_build: build/linux_arm.tar.gz build/linux_arm64.tar.gz build/linux_386.tar.gz build/linux_amd64.tar.gz
@@ -61,7 +62,8 @@ build/darwin_amd64.tar.gz: $(sources)
 	$(call tar,darwin,amd64)
 
 ##### WINDOWS BUILDS #####
-windows_build: build/windows_386.zip build/windows_amd64.zip
+#windows_build: build/windows_386.zip build/windows_amd64.zip
+windows_build: build/windows_amd64.zip
 
 build/windows_386.zip: $(sources)
 	$(call build,windows,386,.exe)

@@ -30,12 +30,14 @@ type FilerOption struct {
 	SecretKey          string
 	DirListingLimit    int
 	DataCenter         string
+	WhiteList          []string
 }
 
 type FilerServer struct {
 	option *FilerOption
 	secret security.Secret
 	filer  *filer2.Filer
+	guard  *security.Guard
 }
 
 func NewFilerServer(defaultMux, readonlyMux *http.ServeMux, option *FilerOption) (fs *FilerServer, err error) {
@@ -60,10 +62,12 @@ func NewFilerServer(defaultMux, readonlyMux *http.ServeMux, option *FilerOption)
 
 	notification.LoadConfiguration(v.Sub("notification"))
 
+	fs.guard = security.NewGuard(option.WhiteList, option.SecretKey)
+	
 	handleStaticResources(defaultMux)
-	defaultMux.HandleFunc("/", fs.filerHandler)
+	defaultMux.HandleFunc("/", fs.guard.WhiteList(fs.filerHandler))
 	if defaultMux != readonlyMux {
-		readonlyMux.HandleFunc("/", fs.readonlyFilerHandler)
+		readonlyMux.HandleFunc("/", fs.guard.WhiteList(fs.readonlyFilerHandler))
 	}
 
 	return fs, nil
